@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "QDebug"
+#include "SplashScreen.h"
+#include "loginscreen.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -8,7 +9,14 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    qDebug() << "Hello world!";
+    splash = new SplashScreen(this);
+    login = new LoginScreen(this);
+
+    setCentralWidget(splash);
+
+    connect(splash, &SplashScreen::goToLogin, this, [this](){
+        setCentralWidget(login);
+    });
 }
 
 MainWindow::~MainWindow()

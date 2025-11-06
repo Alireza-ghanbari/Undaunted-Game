@@ -9,29 +9,32 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    SplashScreen.cpp \
     board.cpp \
     boardscreen.cpp \
     cell.cpp \
     loginscreen.cpp \
     main.cpp \
-    mainwindow.cpp \
-    splashscreen.cpp
+    mainwindow.cpp
 
 HEADERS += \
+    SplashScreen.h \
     board.h \
     boardscreen.h \
     cell.h \
     loginscreen.h \
-    mainwindow.h \
-    splashscreen.h
+    mainwindow.h
 
 FORMS += \
+    SplashScreen.ui \
     boardscreen.ui \
     loginscreen.ui \
-    mainwindow.ui \
-    splashscreen.ui
+    mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc

@@ -15,6 +15,9 @@ public:
     explicit SplashScreen(QWidget *parent = nullptr);
     ~SplashScreen();
 
+signals:
+    void goToLogin();
+
 private:
     Ui::SplashScreen *ui;
 };
