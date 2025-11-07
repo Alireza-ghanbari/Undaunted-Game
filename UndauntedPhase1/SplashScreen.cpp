@@ -1,6 +1,5 @@
 #include "SplashScreen.h"
 #include "ui_SplashScreen.h"
-#include <QPropertyAnimation>
 
 SplashScreen::SplashScreen(QWidget *parent)
     : QWidget(parent)
@@ -11,6 +10,7 @@ SplashScreen::SplashScreen(QWidget *parent)
     ui->logoLabel->setPixmap(QPixmap(":/images/logo.jpg"));
 
     connect(ui->enterGameBtn, &QPushButton::clicked, this, &SplashScreen::goToLogin);
+
 }
 
 SplashScreen::~SplashScreen()

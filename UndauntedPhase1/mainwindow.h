@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "SplashScreen.h"
-#include "loginscreen.h"
+#include "LoginScreen.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
