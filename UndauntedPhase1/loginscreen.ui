@@ -77,6 +77,9 @@
         <kerning>true</kerning>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Enter Players name</string>
       </property>
@@ -119,6 +122,9 @@
          <pointsize>16</pointsize>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
        <property name="maxLength">
         <number>20</number>
        </property>
@@ -144,6 +150,9 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
        <property name="text">
         <string>Continue</string>
        </property>
@@ -161,6 +170,9 @@
         <font>
          <pointsize>16</pointsize>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
        </property>
        <property name="text">
         <string/>
@@ -186,6 +198,9 @@
          <pointsize>20</pointsize>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
        <property name="text">
         <string>player 1:</string>
        </property>
@@ -207,6 +222,10 @@
          <pointsize>20</pointsize>
          <underline>false</underline>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+</string>
        </property>
        <property name="text">
         <string>player 2:</string>
