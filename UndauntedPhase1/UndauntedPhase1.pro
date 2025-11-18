@@ -10,22 +10,22 @@ CONFIG += c++17
 
 SOURCES += \
     Board.cpp \
+    Cell.cpp \
     LoginScreen.cpp \
     MainWindow.cpp \
     MapSelectionDialog.cpp \
     SplashScreen.cpp \
     boardscreen.cpp \
-    cell.cpp \
     main.cpp
 
 HEADERS += \
     Board.h \
+    Cell.h \
     LoginScreen.h \
     MainWindow.h \
     MapSelectionDialog.h \
     SplashScreen.h \
-    boardscreen.h \
-    cell.h
+    boardscreen.h
 
 FORMS += \
     LoginScreen.ui \
