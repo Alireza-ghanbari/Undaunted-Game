@@ -11,25 +11,28 @@ CONFIG += c++17
 SOURCES += \
     Board.cpp \
     LoginScreen.cpp \
+    MainWindow.cpp \
+    MapSelectionDialog.cpp \
     SplashScreen.cpp \
     boardscreen.cpp \
     cell.cpp \
-    main.cpp \
-    mainwindow.cpp
+    main.cpp
 
 HEADERS += \
     Board.h \
     LoginScreen.h \
+    MainWindow.h \
+    MapSelectionDialog.h \
     SplashScreen.h \
     boardscreen.h \
-    cell.h \
-    mainwindow.h
+    cell.h
 
 FORMS += \
     LoginScreen.ui \
+    MainWindow.ui \
+    MapSelectionDialog.ui \
     SplashScreen.ui \
-    boardscreen.ui \
-    mainwindow.ui
+    boardscreen.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

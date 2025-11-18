@@ -1,5 +1,6 @@
 #include "LoginScreen.h"
 #include "ui_LoginScreen.h"
+#include "MapSelectionDialog.h"
 #include <QRegularExpression>
 #include <QShowEvent>
 #include <QDebug>
@@ -99,5 +100,10 @@ void LoginScreen::onContinueClicked()
     const QString p1 = ui->lineEditP1->text().trimmed();
     const QString p2 = ui->lineEditP2->text().trimmed();
 
-    emit continueClicked(p1, p2);
+    MapSelectionDialog dialog(this);
+
+    if(dialog.exec() == QDialog::Accepted){
+        QString selectedMap = dialog.getSelectedMap();
+        emit continueClicked(p1, p2, selectedMap);
+    }
 }

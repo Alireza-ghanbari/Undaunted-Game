@@ -16,7 +16,7 @@ public:
     ~LoginScreen();
 
 signals:
-    void continueClicked(const QString &player1, const QString player2);
+    void continueClicked(const QString &, const QString & , const QString &);
 
 protected:
     void showEvent(QShowEvent *event) override;

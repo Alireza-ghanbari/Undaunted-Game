@@ -1,7 +1,8 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "MainWindow.h"
+#include "ui_MainWindow.h"
 #include "SplashScreen.h"
 #include "LoginScreen.h"
+#include "MapSelectionDialog.h"
 // #include "Board.h"
 #include <QDebug>
 
@@ -23,9 +24,11 @@ MainWindow::MainWindow(QWidget *parent)
     });
 
 
-    connect(login, &LoginScreen::continueClicked, this, [this](const QString &p1, const QString &p2){
-        qDebug() << "Players: " << p1 << p2;
-        // setCesetCentralWidget(borad);
+    connect(login, &LoginScreen::continueClicked, this, [this](const QString &p1, const QString &p2, const QString &map){
+        qDebug() << "Player1:" << p1;
+        qDebug() << "Player2:" << p2;
+        qDebug() << "Selected Map:" << map;
+
     });
 }
 
