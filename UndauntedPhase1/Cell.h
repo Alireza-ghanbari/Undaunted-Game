@@ -13,8 +13,8 @@ public:
     int type() const { return m_type; }
 
 private:
-    QString m_id;   // مثل A01 یا B05
-    int m_type;     // 0 یا 1 یا 2
+    QString m_id;
+    int m_type;
 };
 
 #endif
