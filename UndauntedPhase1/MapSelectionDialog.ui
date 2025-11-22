@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
@@ -52,6 +55,9 @@
         <height>150</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string> MAP 5 x 5</string>
       </property>
@@ -65,8 +71,11 @@
         <height>150</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
-       <string> MAP 4 x 6</string>
+       <string> MAP 7 x 7</string>
       </property>
      </widget>
     </item>
@@ -78,8 +87,12 @@
         <height>150</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+</string>
+      </property>
       <property name="text">
-       <string> MAP 7 x 5</string>
+       <string> MAP 9 x 9</string>
       </property>
      </widget>
     </item>
@@ -98,6 +111,9 @@
     <font>
      <pointsize>24</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>Chose Your Map!</string>

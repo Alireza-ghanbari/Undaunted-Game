@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "SplashScreen.h"
 #include "LoginScreen.h"
+#include "boardscreen.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,5 +24,6 @@ private:
     Ui::MainWindow *ui;
     SplashScreen *splash;
     LoginScreen *login;
+    BoardScreen *boardScreen;
 };
 #endif // MAINWINDOW_H

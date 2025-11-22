@@ -3,7 +3,8 @@
 #include "SplashScreen.h"
 #include "LoginScreen.h"
 #include "MapSelectionDialog.h"
-// #include "Board.h"
+#include "BoardScreen.h"
+#include "Board.h"
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -14,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     splash = new SplashScreen(this);
     login = new LoginScreen();
+    boardScreen = new BoardScreen();
     // board = new Board();
 
     setCentralWidget(splash);
@@ -29,6 +31,8 @@ MainWindow::MainWindow(QWidget *parent)
         qDebug() << "Player2:" << p2;
         qDebug() << "Selected Map:" << map;
 
+        boardScreen->loadMap(map);
+        setCentralWidget(boardScreen);
     });
 }
 

@@ -2,4 +2,9 @@
     <qresource prefix="/images">
         <file>logo.jpg</file>
     </qresource>
+    <qresource prefix="/maps">
+        <file>map1.txt</file>
+        <file>map2.txt</file>
+        <file>map3.txt</file>
+    </qresource>
 </RCC>

@@ -2,6 +2,7 @@
 #define BOARDSCREEN_H
 
 #include <QWidget>
+#include "Board.h"
 
 namespace Ui {
 class BoardScreen;
@@ -15,8 +16,12 @@ public:
     explicit BoardScreen(QWidget *parent = nullptr);
     ~BoardScreen();
 
+    void loadMap(const QString &mapName);
+
 private:
     Ui::BoardScreen *ui;
+
+    Board m_board;
 };
 
 #endif // BOARDSCREEN_H
